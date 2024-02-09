@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: linear-gradient(to right, #008b8bb4, #832300d8);
+}
+.calculator {
+  max-width: 18rem;
+  margin: 20rem auto;
+  box-shadow: 0 10px 20px #3b3b3b23;
+  padding: 0.8rem;
+  border-radius: 11px;
+}
+.cell {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+  margin-top: 0.4rem;
+}
+.cell1 {
+  display: grid;
+  grid-template-columns: 2fr 4fr;
+  gap: 5px;
+  margin-top: 0.4rem;
+}
+.resive-content {
+  max-width: 18rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-align: right;
+  height: 5rem;
+  background-color: #000000c9;
+  color: #f0f0f0;
+  border-radius: 11px;
+}
+.resive-contents {
+  padding: 26px 12px 0;
+}
+.design-buttons,
+.design-button,
+.design-buttonx {
+  display: inline-block;
+  cursor: pointer;
+  border: none;
+  padding: 5px;
+  margin: 3px 0;
+  font-size: 1.4rem;
+  font-weight: 600;
+  border-radius: 25px;
+  background-color: #000000c9;
+  color: #f1f1f1;
+  transition: all 0.3s;
+  box-shadow: 0 10px 20px #ffffff71;
+}
+.buttons-cell {
+  margin-top: 0.8rem;
+}
+.design-buttons:hover {
+  background-color: #0000008f;
+}
+.design-button:hover {
+  background-color: #0000008f;
+}
+.design-buttonx:hover {
+  background-color: #0000008f;
+}
+.design-buttons:active {
+  transform: translateY(5px);
+  box-shadow: none;
+}
+.design-button:active {
+  transform: translateY(5px);
+  box-shadow: none;
+}
+.design-buttonx:active {
+  transform: translateY(5px);
+  box-shadow: none;
+}
+/* 
+for (const el of allButtons) {
+  el.addEventListener("click", function () {
+    const btnValue = el.textContent;
+    const btnSymbolIsClicked = allSymbols.includes(btnValue);
+    if (symbol && btnSymbolIsClicked) {
+      secondValue && calculations();
+      symbol = firstValue;
+    } else if (!symbol) {
+      firstValue += btnValue;
+    } else if (symbol) {
+      secondValue += btnValue;
+    }
+    if (btnValue !== "=") displayContent.textContent += btnValue;
+  });
+}
+*/
